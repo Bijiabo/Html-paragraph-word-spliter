@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jquery-2.1.4.min.js"></script>
+    <script src="./html-paragraph-word-Spliter.js"></script>
+    <style>
+        span[class^="word"] {
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p name="7a27" id="7a27" class="graf--p graf--hasDropCapModel graf--hasDropCap graf-after--h4">
+            <span class="graf-dropCap">J</span>ames Sidney <a href="http://archive.voxmagazine.com/stories/2011/04/07/whats-name/" data-href="http://archive.voxmagazine.com/stories/2011/04/07/whats-name/" class="markup--anchor markup--p-anchor" rel="nofollow">Rollins</a> was a 19th century lawyer, politician and businessman who earned his fortune selling real estate, building railroads and as the owner of a plantation with as many as 34 slaves. Rollins is, however, best known for his two terms as a U.S. congressman during which he voted first against the Thirteenth Amendment to the Constitution, which abolished slavery then later joined a handful of congressmen who changed their votes to allow for the law’s passage. Days before the law passed, he<a href="https://books.google.com/books?id=HblYAAAAMAAJ&amp;pg=PA198&amp;lpg=PA198&amp;dq=James+Sidney+Rollins+slavery&amp;source=bl&amp;ots=mdLbegEXmr&amp;sig=2ISfmj_x-G_6dDBrHwKrdyyfU-g&amp;hl=en&amp;sa=X&amp;ved=0CFUQ6AEwDGoVChMIk7maufOYyQIVyG0-Ch12FgwY#v=onepage&amp;q=James%20Sidney%20Rollins%20slavery&amp;f=false" data-href="https://books.google.com/books?id=HblYAAAAMAAJ&amp;pg=PA198&amp;lpg=PA198&amp;dq=James+Sidney+Rollins+slavery&amp;source=bl&amp;ots=mdLbegEXmr&amp;sig=2ISfmj_x-G_6dDBrHwKrdyyfU-g&amp;hl=en&amp;sa=X&amp;ved=0CFUQ6AEwDGoVChMIk7maufOYyQIVyG0-Ch12FgwY#v=onepage&amp;q=James%20Sidney%20Rollins%20slavery&amp;f=false" class="markup--anchor markup--p-anchor" rel="nofollow"> explained his original vote in a speech</a> on the floor of the U.S. House of Representatives: “Sir, if I could save this Constitution and this Union by preserving the institution of slavery in its present status in the various States, I would do it most cheerfully,”
+            <a href="#">hello,world.</a> he said.
+        </p>
+
+        <p class="fr-tag">
+            <img alt="中国什么时候能有自己的皮克斯、梦工厂？聊聊三维动画电影那些事" data-img-size-val="642,481" class="fr-dib fr-fin fr-tag before-fade-in after-fade-in" src="http://a.36krcnd.com/nil_class/4962a7b5-7436-4a62-8c25-93ce67f5cf5d/2.png">
+            bala bala bala ~
+            <img src="http://temp.im/466x466/4CD964/fff" alt="Miao">
+        </p>
+    </div>
+
+    <script>
+        $(function() {
+            var target_paragraphs = $("p");
+            html_paragraph_word_spliter( target_paragraphs );
+        });
+
+        $(document).on("click", ".word", function() {
+            console.log( $(this).text() );
+        });
+    </script>
+</body>
+</html>
